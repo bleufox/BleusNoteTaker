@@ -41,3 +41,16 @@ app.listen(PORT, () =>
     console.log(`Listening at http://localhost:${PORT}`)
 );
 
+app.delete('/api/notes/:id', (req, res) => {
+    let newNote = JSON.parse(fs.readFileSync('db/db.json', 'utf8'));
+    let noteID = (req.params.id).toString();
+
+    newNote = newNote.filter(selected =>{
+        return selected.id != noteID;
+    })
+
+    fs.writeFileSync('db/db.json', JSON.stringify(newNote));
+    res.json(newNote);
+
+    console.log('Note Successfully Deleted. Refresh to see new list.')
+});
