@@ -18,8 +18,8 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     currentNotes.push(req.body);
-    currentNotes.forEach((note, i) => {
-        note.id = i + 1;
+    currentNotes.forEach((entry, i) => {
+        entry.id = i + 1;
     });
 
     fs.writeFile('./db/db.json', JSON.stringify(currentNotes), function () {
