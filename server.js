@@ -52,5 +52,5 @@ app.delete('/api/notes/:id', (req, res) => {
     fs.writeFileSync('db/db.json', JSON.stringify(newNote));
     res.json(newNote);
 
-    console.log('Note Successfully Deleted. Refresh to see new list.')
+    console.log('Note Successfully Deleted. Restart server to see new list.')
 });
