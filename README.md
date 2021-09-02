@@ -26,15 +26,8 @@ npm install
 node server
 ```
 ## Screenshots
-![Screenshot](/assets/images/main-menu.png)
+![Screenshot](public/assets/images/note-taker.png)
 ===================================================
-![Screenshot](/assets/images/view-departments.png)
-===================================================
-![Screenshot](/assets/images/add-role.png)
-===================================================
-
-## Walkthrough Video Link
-[Bleu's Employee Tracker Walkthrough Video](https://www.loom.com/share/a01adb813508499a831ca0f646ba7e1b)
 
 ## Technologies Used
 * Javascript, Express
