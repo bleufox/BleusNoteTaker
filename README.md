@@ -30,7 +30,7 @@ node server
 ===================================================
 
 ## Technologies Used
-* Javascript, Express
+* HTML, CSS, Javascript, Express
 
 ## Repository
 * GitHub Repo: https://github.com/bleufox/BleusNoteTaker
